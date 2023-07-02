@@ -25,8 +25,8 @@ const Portfolio = () => {
                 </div>
 
                 <div className='flex items-center justify-between w-[60%] m-auto '>
-                  <a href={demo} target='_blank'><button className='w-1/2 pt-3 pb-2 duration-200 hover:scale-105'>Demo</button></a>
-                  <a href={code} target='_blank'><button className='w-1/2 pt-3 pb-2 duration-200 hover:scale-105'>Code</button></a>
+                  <a href={demo} target='_blank' rel='noreferrer'><button className='w-1/2 pt-3 pb-2 duration-200 hover:scale-105'>Demo</button></a>
+                  <a href={code} target='_blank'rel='noreferrer'><button className='w-1/2 pt-3 pb-2 duration-200 hover:scale-105'>Code</button></a>
                 </div>
 
               </div>

@@ -52,7 +52,7 @@ const icons = [
 
                     <div>
                         <img className='rounded-2xl mx-auto w-2/3 md:w-8/12 animate-wiggle'
-                            src={profile} alt="profile image" width={200} />
+                            src={profile} alt="profile" width={200} />
                 
                     </div>
                 </div>

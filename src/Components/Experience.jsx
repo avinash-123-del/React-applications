@@ -64,7 +64,7 @@ const Portfolio = () => {
         <div className=' grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0'>
           {
             image.map(({ id, src, style, title }) => (
-              <div key={id} title={title} className={'shadow-md relative cursor-pointer  rounded-lg' + ' ' + style}>
+              <div key={id} title={title} className={`shadow-md relative cursor-pointer rounded-lg ${style}`}>
                 <div className='group flex align-top justify-center p-3 '>
                   <img className='rounded-md duration-200 group-hover:scale-75 group-hover:opacity-50' src={src} width={100} alt="ff" />
 
