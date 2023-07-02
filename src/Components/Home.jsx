@@ -29,8 +29,8 @@ const icons = [
     },
 ]
     return (
-        <div name='home' className='pt-[90px]  sm:pt-0 w-full bg-gradient-to-b from-black to-gray-800 text-white'>
-            <div className=''>
+        <div name='home' className='pt-[90px]  sm:pt-1 w-full bg-gradient-to-b from-black to-gray-800 text-white max-h-screen overflow-hidden'>
+            <div>
 
                 <div className='max-w-screen-xl mx-auto flex flex-col items-center justify-center px-4 h-screen md:flex-row '>
                     <div className='flex flex-col justify-center '>
@@ -38,7 +38,7 @@ const icons = [
                         <h2 className='text-4xl md:text-7xl text-gray-300 animate-scale '>Front End Developer</h2>
                         <br />
                         <p className='text-gray-300 '>
-                            I have a years of experience building and designing software.
+                        I have accumulated an impressive collection of projects that showcase my skills and proficiency in web development.
                             Currently, I have to work on web applications using technologies like React, Tailwind, JavaScript.
                         </p>
                         <div>
@@ -58,7 +58,7 @@ const icons = [
                 </div>
             </div>
             <br />
-            <div className='hidden md:flex justify-between items-center w-[70%] border-2 absolute bottom-0 right-[15%] py-3 px-9 rounded-t-3xl border-b-transparent'>
+            <div className='hidden md:flex justify-between items-center w-[70%] border-2 absolute bottom-0 right-[15%] py-4 px-9 rounded-t-3xl border-b-transparent'>
                 {
                     icons.map(({id,detail,icon}) => (
                         <div key={id} className='text-sm flex items-center justify-between'>

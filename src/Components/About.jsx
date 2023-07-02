@@ -35,7 +35,7 @@ const About = () => {
         },
     ]
     return (
-        <div name='about' className=' pt-[100px]  w-full bg-gradient-to-b from-black to-gray-800 text-white '>
+        <div name='about' className=' pt-[100px]  w-full bg-gradient-to-b from-black to-gray-800 text-white max-h-screen overflow-hidden'>
             {/* <div className='flex justify-between items-center pt-[200px] max-w-full w-[90%]'> */}
             {/* <div>
                     <img src={photo} alt="" width={1500} />
