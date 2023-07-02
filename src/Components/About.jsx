@@ -35,13 +35,13 @@ const About = () => {
         },
     ]
     return (
-        <div name='about' className=' pt-[100px]  w-full bg-gradient-to-b from-black to-gray-800 text-white max-h-screen overflow-hidden'>
+        <div name='about' className=' pt-[100px]  w-full bg-gradient-to-b from-black to-gray-800 text-white max-h-full '>
             {/* <div className='flex justify-between items-center pt-[200px] max-w-full w-[90%]'> */}
             {/* <div>
                     <img src={photo} alt="" width={1500} />
                 </div> */}
 
-            <div className=' p-4 mx-auto flex flex-col  w-[90%] sm:w-[70%] max-w-full h-screen '>
+            <div className=' p-4 mx-auto flex flex-col  w-[90%] sm:w-[70%] max-w-full md:h-screen '>
                 <div className='pb-4'>
                     <p className='text-4xl font-bold inline border-b-4 border-gray-500'>About</p>
                 </div>
