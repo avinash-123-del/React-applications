@@ -58,12 +58,15 @@ const About = () => {
                 </div>
                 <br />
                 <div className=''>
-                    <button className='relative bg-gradient-to-r from-blue-600 to to-blue-900 px-2 py-3 rounded-md text-gray-200 -'>Download CV
-                        <span className="absolute top-[-5px] right-[-5px] flex h-3 w-3">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-200 opacity-75"></span>
-                            <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
-                        </span>
-                    </button>
+                    <a href="/Avinash_Chandraker_Resume.pdf">
+                        <button className='relative bg-gradient-to-r from-blue-600 to to-blue-900 px-2 py-3 rounded-md text-gray-200 -'>Download CV
+                            <span className="absolute top-[-5px] right-[-5px] flex h-3 w-3">
+                                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-200 opacity-75"></span>
+                                <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+                            </span>
+
+                        </button>
+                    </a>
                 </div>
             </div>
 
