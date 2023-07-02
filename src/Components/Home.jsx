@@ -29,11 +29,11 @@ const icons = [
     },
 ]
     return (
-        <div name='home' className='h-screen pt-[150px]  w-full bg-gradient-to-b from-black to-gray-800 text-white'>
+        <div name='home' className='pt-[90px]  sm:pt-0 w-full bg-gradient-to-b from-black to-gray-800 text-white'>
             <div className=''>
 
-                <div className='max-w-screen-xl mx-auto flex flex-col items-center justify-center  h-full px-4 md:flex-row '>
-                    <div className='flex flex-col justify-center h-full  '>
+                <div className='max-w-screen-xl mx-auto flex flex-col items-center justify-center px-4 h-screen md:flex-row '>
+                    <div className='flex flex-col justify-center '>
                         <h2 className='text-4xl md:text-3xl text-gray-400'>I'm a </h2>
                         <h2 className='text-4xl md:text-7xl text-gray-300 animate-scale '>Front End Developer</h2>
                         <br />

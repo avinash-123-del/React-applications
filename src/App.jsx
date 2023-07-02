@@ -10,7 +10,7 @@ import Contact from './Components/Contact'
 import { Route,Routes } from 'react-router-dom'
 const App = () => {
   return (
-    <div>
+    <div >
       <Navbar/>
       <SocialLinks/>
       <Routes>
