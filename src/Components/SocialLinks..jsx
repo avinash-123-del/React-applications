@@ -34,7 +34,7 @@ const SocialLinks = () => {
             child: (<>
                 Resume <img src={resume} width={30} alt="" />
             </>),
-            href: '/resume.jpg',
+            href: '/resume.pdf',
             style: 'rounded-tr-md',
             download:true
         },
