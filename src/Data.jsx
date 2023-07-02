@@ -104,7 +104,7 @@ export const data = [
         id:13,
         image:tesco_world,
         name:'Tesco World',
-        code:'https://github.com/avinash-123-del/React-applications/tree/main/Tesco%20World',
+        code:'https://github.com/avinash-123-del/Tesco-world/tree/main',
         demo:'https://job-freak-webpage.netlify.app/'
     },
     {
