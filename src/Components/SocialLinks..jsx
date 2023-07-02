@@ -34,7 +34,7 @@ const SocialLinks = () => {
             child: (<>
                 Resume <img src={resume} width={30} alt="" />
             </>),
-            href: '/Avinash_Chandraker_Resume.pdf',
+            href: '/avinash_chandraker_resume.pdf',
             style: 'rounded-tr-md',
             download:true
         },

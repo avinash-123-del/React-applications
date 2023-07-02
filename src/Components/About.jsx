@@ -1,5 +1,6 @@
 import React from 'react'
 // import photo from '../images/photo.png'
+
 const About = () => {
     const about = [
         {
@@ -58,7 +59,7 @@ const About = () => {
                 </div>
                 <br />
                 <div className=''>
-                    <a href="https://main--avinash-portfolio-1997.netlify.app/Avinash_Chandraker_Resume" download={true}>
+                    <a href='/avinash_chandraker_resume.pdf' download={true}>
                         <button className='relative bg-gradient-to-r from-blue-600 to to-blue-900 px-2 py-3 rounded-md text-gray-200 -'>Download CV
                             <span className="absolute top-[-5px] right-[-5px] flex h-3 w-3">
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-200 opacity-75"></span>
