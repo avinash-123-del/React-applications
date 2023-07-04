@@ -133,6 +133,6 @@ export const data = [
         image:react_crud,
         name:'React CRUD',
         code:'https://github.com/avinash-123-del/React-CRUD/tree/main',
-        demo:'https://github.com/avinash-123-del/React-applications/tree/main/React-form'
+        demo:'https://react-crud-avinash.netlify.app/'
     },
 ]
