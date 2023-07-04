@@ -14,7 +14,7 @@ import real_state from './Projects/Real State.png'
 import shopping_cart from './Projects/Shopping Cart.png'
 import tesco_world from './Projects/Tesco World Page.png'
 import weather_report from './Projects/Weather Forecast.png'
-
+import react_crud from './Projects/React crud.png'
 export const data = [
     {
         id:1,
@@ -125,7 +125,14 @@ export const data = [
         id:16,
         image:react_form,
         name:'Forms',
-        code:'https://form-fill-review-react-app.netlify.app/',
+        code:'https://github.com/avinash-123-del/React-applications/tree/main/React-form',
+        demo:'https://form-fill-review-react-app.netlify.app/'
+    },
+    {
+        id:17,
+        image:react_crud,
+        name:'React CRUD',
+        code:'https://github.com/avinash-123-del/React-CRUD/tree/main',
         demo:'https://github.com/avinash-123-del/React-applications/tree/main/React-form'
     },
 ]

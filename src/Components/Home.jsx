@@ -58,7 +58,7 @@ const icons = [
                 </div>
             </div>
             <br />
-            <div className='hidden md:flex justify-between items-center w-[70%] border-2 absolute bottom-0 right-[15%] py-4 px-9 rounded-t-3xl border-b-transparent'>
+            <div className='hidden md:flex justify-between items-center w-[70%] max-w-screen border-2 absolute bottom-0 right-[15%] py-4 px-9 rounded-t-3xl border-b-transparent'>
                 {
                     icons.map(({id,detail,icon}) => (
                         <div key={id} className='text-sm flex items-center justify-between'>
