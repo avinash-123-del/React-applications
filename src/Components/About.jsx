@@ -1,6 +1,7 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 // import photo from '../images/photo.png'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const About = () => {
     const about = [
         {
@@ -34,6 +35,9 @@ const About = () => {
             detail: 'Available'
         },
     ]
+    useEffect(() => {
+        AOS.init({duration:1000})
+    },[])
     return (
         <div name='about' className=' pt-[100px]  w-full bg-gradient-to-b from-black to-gray-800 text-white max-h-full '>
             {/* <div className='flex justify-between items-center pt-[200px] max-w-full w-[90%]'> */}
@@ -42,15 +46,15 @@ const About = () => {
                 </div> */}
 
             <div className=' p-4 mx-auto flex flex-col  w-[90%] sm:w-[70%] max-w-full md:h-screen '>
-                <div className='pb-4'>
+                <div data-aos='fade-down' className='pb-4'>
                     <p className='text-4xl font-bold inline border-b-4 border-gray-500'>About</p>
                 </div>
 
-                <div>
+                <div data-aos='fade-up'>
                     <p className='text-gray-200 text-sm sm:text-base'>Welcome to my portfolio! I'm Avinash Chandraker, a passionate front-end developer dedicated to creating exceptional web experiences. With expertise in HTML, CSS, Bootstrap, React, JavaScript, Tailwind CSS, REST API, Git, and GitHub, I craft clean and clear code to bring ideas to life.As you explore my portfolio, you'll find a diverse range of projects that highlight my capabilities. Each project is meticulously crafted, incorporating the best practices of front-end development. From stunning designs to seamless user interactions, I ensure that every aspect of a website contributes to an outstanding user experience.</p>
                 </div>
                 <br />
-                <div className='border-2 sm:text-base text-sm border-red-500 flex flex-col sm:grid grid-cols-2 gap-3 justify-between items-start p-4 sm:w-[70%] max-w-full'>
+                <div data-aos='fade-down' className='border-2 sm:text-base text-sm border-red-500 flex flex-col sm:grid grid-cols-2 gap-3 justify-between items-start p-4 sm:w-[70%] max-w-full'>
                     {
                         about.map(({ id, item, detail }) => (
                             <p key={id}><span className='text-gray-400 font-semibold'>{item}</span> : {detail}</p>
@@ -58,7 +62,7 @@ const About = () => {
                     }
                 </div>
                 <br />
-                <div className=''>
+                <div data-aos='fade-down' className=''>
                     <a href='/avinash_chandraker_resume.pdf' download={true}>
                         <button className='relative bg-gradient-to-r from-blue-600 to to-blue-900 px-2 py-3 rounded-md text-gray-200 -'>Download CV
                             <span className="absolute top-[-5px] right-[-5px] flex h-3 w-3">

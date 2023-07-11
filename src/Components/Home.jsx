@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import gmail from '../images/gmail.png'
 import whatsapp from '../images/whatsapp.png'
 import facebook from '../images/facebook.png'
 import instagram from '../images/instagram.png'
 import profile from '../images/profile.jpg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Home = () => {
 const icons = [
     {
@@ -28,6 +30,10 @@ const icons = [
         detail:'Avii Chandraker'
     },
 ]
+useEffect(() => {
+    AOS.init({duration:3000})
+},[])
+
     return (
         <div name='home' className='pt-[90px]  sm:pt-1 w-full bg-gradient-to-b from-black to-gray-800 text-white h-full'>
             <div>
@@ -51,7 +57,7 @@ const icons = [
                     </div>
 
                     <div>
-                        <img className='rounded-2xl mx-auto w-2/3 md:w-8/12 animate-wiggle'
+                        <img data-aos='fade-down' className='rounded-2xl mx-auto w-2/3 md:w-8/12 animate-wiggle'
                             src={profile} alt="profile" width={200} />
                 
                     </div>
@@ -62,7 +68,7 @@ const icons = [
                 {
                     icons.map(({id,detail,icon}) => (
                         <div key={id} className='text-sm flex items-center justify-between'>
-                            <img src={icon} alt="" className='px-2' width={40} />{detail}</div>
+                            <img  src={icon} alt="" className='px-2' width={40} />{detail}</div>
                     ))
                 }
                 

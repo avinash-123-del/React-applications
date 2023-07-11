@@ -1,8 +1,10 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import github from '../images/github.png'
 import gmail from '../images/gmail.png'
 import resume from '../images/resume.png'
 import linkedin from '../images/linkedin.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const SocialLinks = () => {
     const links = [
         {
@@ -39,8 +41,13 @@ const SocialLinks = () => {
             download:true
         },
     ]
+    
+    useEffect(() => {
+        AOS.init({duration:1000})
+    },[])
+
     return (
-        <div className='hidden lg:flex flex-col top-[35%] left-0 fixed'>
+        <div data-aos='fade-left' className='hidden lg:flex flex-col top-[35%] left-0 fixed'>
             <ul>
                 {
                     links.map((link) => (

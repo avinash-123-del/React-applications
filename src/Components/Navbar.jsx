@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { AiOutlineClose } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 import avinash from '../images/avinash.jpg'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Navbar = () => {
 
   const [nav, setNav] = useState(false)
@@ -31,8 +32,12 @@ const Navbar = () => {
     },
   ]
 
+  useEffect(() => {
+    AOS.init({duration:1000})
+},[])
+
   return (
-    <div className='flex justify-between shadow-md shadow-slate-600 z-10 items-center w-full h-20 text-white fixed bg-black px-4 '>
+    <div data-aos='fade-down' className='flex justify-between shadow-md shadow-slate-600 z-10 items-center w-full h-20 text-white fixed bg-black px-4 '>
       <Link to='/home'>
         <div className='flex justify-between items-center'>
           <img className='rounded-full' src={avinash} width={40} alt="profile" />
@@ -43,7 +48,7 @@ const Navbar = () => {
       <ul className='hidden md:flex'>
         {
           links.map(({ id, link }) => (
-            <li key={id} className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 '>
+            <li  key={id} className='px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 '>
               <Link to={link} duration={500}>{link}</Link>
             </li>
           ))

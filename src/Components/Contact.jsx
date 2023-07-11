@@ -1,15 +1,21 @@
-import React from 'react'
-
+import React,{useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 const Contact = () => {
+
+    useEffect(() => {
+        AOS.init({duration:1000})
+    },[])
+
     return (
         <div name='contact' className='bg-gradient-to-b from-black to-gray-800 w-full text-white sm:pt-[60px] max-h-full pt-[100px] '>
-            <div className='flex flex-col justify-center px-4 max-w-screen-lg mx-auto md:h-screen'>
+            <div data-aos='fade-down' className='flex flex-col justify-center px-4 max-w-screen-lg mx-auto md:h-screen'>
                 <div className='pb-8'>
                     <p className='text-4xl font-bold inline border-b-4 border-gray-500'>Contact</p>
                     <p className='py-6'> Submit the form below to get in touch with me.</p>
                 </div>
 
-                <div className='flex justify-center items-center '>
+                <div data-aos='zoom-in' className='flex justify-center items-center '>
                     <form action="https://getform.io/f/1b396da3-f80f-4527-86e2-580fc861b27d"
                         method='POST'
                         className='flex flex-col w-full md:w1/2 '>
